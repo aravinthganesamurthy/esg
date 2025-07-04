@@ -1,6 +1,3 @@
-
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -34,4 +31,231 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.main-container {
+  background-color: #f3f2f7 !important;
+  padding: 30px 30px 30px 40px !important;
+  max-width: calc(100% - 345px) !important;
+}
+
+.main-sidebar .MuiPaper-root.MuiPaper-elevation {
+  border-right-width: 0;
+}
+
+.main-sidebar .logo-text{
+  font-size: 52px;
+  color: #262626;
+  font-weight: bold;
+  padding: 30px 0px 30px 50px;
+}
+
+.main-sidebar ul{
+  padding: 0 30px;
+}
+.main-sidebar li{
+  padding: 15px 18px;
+}
+
+.main-sidebar li:nth-child(3){
+  background: linear-gradient(270deg, rgba(147, 51, 234, 0.15) 0%, rgba(37, 99, 235, 0.15) 100%);
+  border-radius: 16px;
+  position: relative;
+}
+
+.main-sidebar li:hover{
+  background-color: #ffffff;
+}
+
+.main-sidebar li:nth-child(3)::before{
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 8px;
+  height: 62px;
+  border-radius: 16px;
+  background: linear-gradient(360deg, #9333EA 0%, #2563EB 100%);
+}
+
+.main-sidebar li:nth-child(3) span{
+  background: linear-gradient(270deg, #9333EA 0%, #2563EB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* For Safari */
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.title-card-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.select-filter-with-update{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.select-filter-with-update .update-button{
+    padding: 14px;
+}
+
+.title-card-container .select-filter .MuiButton-outlinedPrimary {
+  padding: 14px;
+}
+
+.small-info-card {
+  /* background-color: red; */
+  background-color: #ffff;
+  border-radius: 16px !important;
+  box-shadow: 0px 4px 4px 0px #0000000a !important;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+}
+.small-info-card.Total{
+  background-color: #cfdaf9 ;
+}
+.small-info-card.ESG{
+  background-color: #D2EBF8 ;
+}
+.small-info-card.Carbon{
+  background-color: #D3E0FB ;
+}
+.small-info-card.Pollution{
+  background-color: #c0e7fb ;
+}
+
+.small-info-card img {
+  padding: 20px 0 20px 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.small-info-card .card-title {
+  font-size: 18px;
+  color: #1e3985;
+}
+
+.small-info-card .card-value {
+  font-size: 28px;
+}
+
+.title-card-container h4 {
+  font-weight: 600;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 100%;
+  /* letter-spacing: 1px; */
+  margin-bottom: 5px;
+}
+.title-card-container h5 {
+  font-size: 16px;
+  color: #666666;
+}
+
+.mid-card-container {
+  background-color: #ffff;
+  /* padding: 32px 16px !important; */
+  border-radius: 16px !important;
+  box-shadow: 0px 4px 4px 0px #0000000a !important;
+}
+
+.mid-card-container .mid-card-child{
+  padding: 25px 20px !important;
+}
+
+.mid-card-container .mid-card-child.company-list{
+  min-height: 232px;
+}
+
+.mid-card-container .low-color{
+  color: #01AD01;
+}
+.mid-card-container .medium-color{
+  color: #FD8000;
+}
+.mid-card-container .high-color{
+  color: #E80000;
+}
+
+.mid-card-container .top-company-group .MuiTypography-root:first-child{
+  width: 170px !important;
+}
+
+/* .mid-card-container .top-company-group .MuiTypography-root:nth-child(2){
+  width: 30px !important;
+} */
+
+.mid-card-container .MuiStack-root{
+  border-bottom: #d1d1d1 1px solid;
+  padding: 10px;
+}
+.mid-card-container .MuiStack-root:last-child{
+  border-width: 0;
+}
+
+.mid-card-container .mid-card-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 10px;
+}
+
+.table-container,
+.chart-container {
+  background-color: #ffff;
+  padding: 32px 16px !important;
+  border-radius: 16px !important;
+  box-shadow: 0px 4px 4px 0px #0000000a !important;
+  margin-bottom: 20px;
+}
+
+.table-container .MuiPaper-root.MuiPaper-elevation {
+  border-width: 0px !important;
+  box-shadow: unset;
+  margin: 0;
+}
+
+.table-container thead .table-first-layer th,
+.table-container thead .table-second-layer th {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  min-width: 120px;
+  padding: 22px;
+  border-bottom-color: #d1d1d1;
+  border-bottom-width: 2px;
+  /* vertical-align: bottom; */
+}
+.table-container thead .th-center {
+  text-align: center;
+}
+.table-container tbody td {
+  color: #333333;
+  font-size: 15px;
+  border-bottom-color: #d1d1d1;
+  border-bottom-width: 2px;
+  padding: 22px;
+}
+.table-container tbody td.cid {
+  color: #000000;
+  /* font-weight: 600; */
+}
+
+.copy-right-footer{
+  font-size: 12px !important;
+  text-align: center;
+  color: #A3A3A3;
 }

@@ -38,7 +38,8 @@ export default function MultipleSelect() {
             sx={{
                 justifyContent: "space-between",
                 alignItems: "center",
-            }}>
+            }}
+        >
             <FormControl sx={{ width: 300 }}>
                 <InputLabel id="demo-simple-select-label">Industry</InputLabel>
                 <Select

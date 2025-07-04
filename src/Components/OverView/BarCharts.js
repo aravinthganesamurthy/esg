@@ -18,7 +18,8 @@ function BarCharts() {
 
     const Chart = {
         chart: {
-            type: 'column'
+            type: 'column',
+            height: 514, 
         },
         title: {
             text: null
@@ -67,7 +68,11 @@ function BarCharts() {
     };
 
 
-    return <HighchartsReact highcharts={Highcharts} options={Chart} />;
+    return (
+        <div className="chart-container">
+            <HighchartsReact highcharts={Highcharts} options={Chart} />
+        </div>
+    );
 }
 
 export default BarCharts;
