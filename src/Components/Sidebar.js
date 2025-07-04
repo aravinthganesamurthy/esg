@@ -35,8 +35,10 @@ export default function Sidebar({ drawerWidth }) {
         },
       }}>
       <Typography variant='h6' noWrap className='logo-text'>
-        Ethyx
+        <span className='logo-text-span'>Ethyx</span>
+        <span className='logo-text-mobile'>E</span>
       </Typography>
+
       <List>
         {navItems.map((item, index) => (
           <ListItem button key={index}>

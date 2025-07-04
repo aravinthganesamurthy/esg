@@ -6,6 +6,8 @@ import { Grid, Typography, Button } from '@mui/material';
 import Container from '@mui/material/Container';
 import BarCharts from './BarCharts.js';
 import RiskCompany from './RiskCompany.js';
+// import { RefreshOutlined } from '@mui/icons-material';
+import  CachedOutlinedIcon  from '@mui/icons-material/CachedOutlined';
 
 function OverViewLayout() {
   return (
@@ -23,7 +25,10 @@ function OverViewLayout() {
             <div className='select-filter'>
               <Select />
             </div>
-              <Button variant='outlined' className='update-button'>Update</Button>
+            <Button variant='outlined' className='update-button'
+            startIcon={<CachedOutlinedIcon  />}>
+               Update
+            </Button>
           </div>
         </div>
 
@@ -31,7 +36,7 @@ function OverViewLayout() {
           <KPI />
         </Grid>
 
-        <Grid container spacing={4}>
+        <Grid container spacing={4} className='chart-with-risk-company'>
           <Grid size={8}>
             <BarCharts />
           </Grid>

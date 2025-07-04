@@ -257,9 +257,194 @@
   color: #000000;
   /* font-weight: 600; */
 }
-
+.table-container tbody tr:hover{
+  background-color: #F3F2F7;
+}
 .copy-right-footer{
   font-size: 12px !important;
   text-align: center;
   color: #A3A3A3;
+}
+@media (min-width:769px) {
+  .logo-text-mobile{
+    display: none;
+  }
+}
+
+@media (max-width:768px) {
+  /* .main-container-with-sidebar{
+    flex-wrap: wrap;
+  } */
+  .main-sidebar{
+
+    /* width: 100% !important;
+    position: unset; */
+    width: 80px !important;
+  }
+  .main-sidebar .MuiPaper-root.MuiPaper-elevation{
+    width: 80px !important;
+    /* width: 100% !important;
+    position: unset; */
+  }
+  .main-container{
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px !important;
+  }
+  
+  .logo-text-span{
+    display: none !important;
+  }
+  .logo-text-mobile{
+    display: block;
+    font-size: 40px;
+  }
+  .logo-text{
+    padding: 20px 0px 10px 30px !important;
+  }
+  .main-sidebar ul{
+    padding: 10px;
+  }
+  .main-sidebar ul li .MuiListItemText-root:nth-child(1){
+    min-width: auto;
+  }
+  .main-sidebar ul li .MuiListItemText-root:nth-child(2){
+    display: none !important;
+  }
+  .title-card-container{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .select-filter .MuiStack-root{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .select-filter-with-update .MuiFormControl-root{
+      flex: auto;
+  }
+  .select-filter-with-update{
+    flex-wrap: wrap ;
+    flex-direction: column;
+  }
+  .select-filter-with-update button,
+  .select-filter-with-update select{
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .min-card-parent{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .min-card-parent{
+    flex-wrap: wrap;
+    flex-direction: column !important;
+    display: flex;
+  }
+  .min-card-parent .MuiGrid-root{
+    width: 100%;
+  }
+  .small-info-card{
+    width: 100%;
+    margin: 0;
+  }
+  .chart-container{
+    margin: 20px 0 0;
+  }
+  .chart-with-risk-company{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+    width: 100%;
+  }
+  /* .chart-container{
+    width: 100%;
+  } */
+  .chart-with-risk-company .MuiGrid-root.MuiGrid-direction-xs-row{
+    width: 100%;
+  }
+}
+
+@media (min-width:952px) and (max-width:1490px) {
+  
+  .title-card-container{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .min-card-parent{ 
+    justify-content: space-between;
+    gap: 20px !important;
+  }
+  .min-card-parent .MuiGrid-root{
+    width: 48%;
+  }
+  .small-info-card{
+    width: 100%;
+    margin: 0;
+  }
+
+  .chart-with-risk-company{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .chart-with-risk-company .MuiGrid-root.MuiGrid-direction-xs-row{
+    width: 100%;
+  } 
+}
+
+@media (min-width:769px) and (max-width:952px) {
+  
+  .title-card-container{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .select-filter-with-update{
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+  .select-filter{
+    width: 100% !important;
+  }
+  .select-filter .MuiFormControl-root{
+    /* flex: 1; */
+    width: 100% !important;
+  }
+  .select-filter .MuiStack-root{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100% !important;
+  }
+  .select-filter-with-update button{
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .min-card-parent{ 
+    flex-direction: column !important ;
+    justify-content: space-between;
+    gap: 20px !important;
+  }
+  .min-card-parent .MuiGrid-root{
+    width: 100%;
+  }
+  .small-info-card{
+    width: 100%;
+    margin: 0;
+  }
+  .chart-with-risk-company{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .chart-with-risk-company .MuiGrid-root.MuiGrid-direction-xs-row{
+    width: 100%;
+  } 
+  
 }

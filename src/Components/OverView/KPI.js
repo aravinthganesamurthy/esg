@@ -40,7 +40,7 @@ function SelectActionCard() {
   ];
 
   return (
-    <Grid container spacing={4}>
+    <Grid container spacing={4} className='min-card-parent'>
       {cards.map((it) => (
         <Grid size={3}>
           <Card sx={{ width: '100%' }} className={`small-info-card ${it.title}`}>

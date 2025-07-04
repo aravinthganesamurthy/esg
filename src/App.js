@@ -14,7 +14,7 @@ const drawerWidth = 345;
 function App() {
   return (
     <div className='App'>
-      <Box sx={{ display: 'flex'}}>
+      <Box sx={{ display: 'flex'}} className="main-container-with-sidebar">
         <Sidebar drawerWidth={drawerWidth} />
         <ESGDashboard />
       </Box>
