@@ -104,13 +104,17 @@
   gap: 16px;
   align-items: center;
 }
-
+.select-filter .MuiInputBase-colorPrimary.MuiInputBase-formControl{
+  border-radius: 8px;
+}
 .select-filter-with-update .update-button{
-    padding: 14px;
+  padding: 14px;
+  border-radius: 8px !important;
 }
 
 .title-card-container .select-filter .MuiButton-outlinedPrimary {
   padding: 14px;
+  border-radius: 8px !important;
 }
 
 .small-info-card {

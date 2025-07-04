@@ -39,7 +39,7 @@ function SelectActionCard() {
               direction='row'
               sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
               <Typography gutterBottom variant='subtitle1' component='div'>
-                {'Low '} <span className='low-color'>{'( > 85 )'}</span>
+                {'Low '} <span className='low-color'>{'(> 85)'}</span>
               </Typography>
               <Typography gutterBottom variant='h6' component='div' className='low-color'>
                 {riskCategories['Low']}
@@ -50,7 +50,7 @@ function SelectActionCard() {
               direction='row'
               sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
               <Typography gutterBottom variant='subtitle1' component='div'>
-                {'Medium '} <span className='medium-color'>{'( 70 - 85 )'}</span>
+                {'Medium '} <span className='medium-color'>{'(70 - 85)'}</span>
               </Typography>
               <Typography gutterBottom variant='h6' component='div' className='medium-color'>
                 {riskCategories['Medium']}
@@ -61,7 +61,7 @@ function SelectActionCard() {
               direction='row'
               sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
               <Typography gutterBottom variant='subtitle1' component='div'>
-                {'High'} <span className='high-color'>{'( 70 )'}</span>
+                {'High'} <span className='high-color'>{'(70)'}</span>
               </Typography>
               <Typography gutterBottom variant='h6' component='div' className='high-color'>
                 {riskCategories['High']}
@@ -76,7 +76,7 @@ function SelectActionCard() {
             <Stack
               direction='row'
               sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-              <Typography variant='h6' component='div'>
+              <Typography gutterBottom variant='h6' component='div'>
                 Top 3 Companies
               </Typography>
               <Typography gutterBottom variant='h6' component='div'>
